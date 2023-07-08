@@ -1,3 +1,4 @@
 public/* linguist-documentation
 out/* linguist-vendored
 .next/* linguist-vendored
+next.config.js linguist-vendored
