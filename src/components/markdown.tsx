@@ -5,6 +5,8 @@ import { Components } from 'react-markdown'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import remarkGfm from 'remark-gfm'
 
+import theme from '~/theme/main'
+
 const components: Components = {
   img: ({ src, alt }) => {
     if (!src) return (<></>)
@@ -112,7 +114,7 @@ const Markdown = ({ children }: MarkdownProps) => (
       marginTop: '0.25em'
     },
     '& a': {
-      color: '#0366d6',
+      color: theme.palette.primary.main,
       textDecoration: 'none',
       '&:hover': {
         textDecoration: 'underline'

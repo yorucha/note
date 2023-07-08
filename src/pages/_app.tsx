@@ -1,12 +1,10 @@
 import 'normalize.css'
 
-import { AppBar, Box, Container, Toolbar } from '@mui/material'
 import type { AppProps } from 'next/app'
 import { IBM_Plex_Sans_JP, Roboto } from 'next/font/google'
-import Image from 'next/image'
+import GithubCorner from 'react-github-corner'
 
-import icon from '~/assets/github-mark.svg'
-import theme from '~/theme/mui'
+import theme from '~/theme/main'
 
 const GithubURL = 'https://github.com/yorucha/note'
 
@@ -29,32 +27,16 @@ export default function App ({ Component, pageProps }: AppProps) {
         html {
           font-family: ${roboto.style.fontFamily}, ${IBMPlexSansJP.style.fontFamily};
           font-size: 16px;
+        }
+        body {
+          color: ${theme.palette.text.primary}
+        }
+        * {
           box-sizing: border-box;
         }
       `}</style>
-      <main css={{ background: theme.palette.background.default }}>
-        <AppBar
-          variant='elevation'
-          elevation={0}
-          color='transparent'
-          position='static'
-          sx={{ borderBottom: `1px solid ${theme.palette.divider}` }}
-        >
-          <Toolbar variant='dense'>
-            <Container maxWidth='lg' sx={{ display: 'flex' }}>
-              <Box ml='auto'>
-                <a href={GithubURL} target='_blank' rel='noopener noreferrer'>
-                  <Image
-                    alt='logo'
-                    height={24}
-                    width={24}
-                    src={icon}
-                  />
-                </a>
-              </Box>
-            </Container>
-          </Toolbar>
-        </AppBar>
+      <main css={{ background: '#fefefe' }}>
+        <GithubCorner href={GithubURL} bannerColor={theme.palette.primary.main}/>
         <Component {...pageProps} />
       </main>
     </>

@@ -1,4 +1,3 @@
-import { Container, Paper } from '@mui/material'
 import fs from 'fs'
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
@@ -56,11 +55,30 @@ const Note: NextPage<Props> = (props) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>
-        <Container maxWidth='md' sx={{ p: 2 }}>
-          <Paper variant='outlined' sx={{ px: 1, borderRadius: '6px' }}>
+        <div css={{
+          boxSizing: 'border-box',
+          maxWidth: 900,
+          width: '100%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginTop: 32,
+          marginBottom: 32,
+          paddingLeft: 24,
+          paddingRight: 24
+        }}>
+          <div css={{
+            background: '#fff',
+            '-webkit-transition': 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+            transition: 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+            borderRadius: '6px',
+            border: '1px solid',
+            borderColor: 'rgba(0,0,0,0.12)',
+            paddingLeft: 8,
+            paddingRight: 8
+          }}>
             <Markdown>{props.contents}</Markdown>
-          </Paper>
-        </Container>
+          </div>
+        </div>
       </main>
     </>
   )

@@ -9,7 +9,7 @@ export default function Root () {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>
-        <div css={{ height: '440px' }}>
+        <div css={{ height: 'calc(100vh - 4px)' }}>
           <iframe src='https://chromedino.com/' width='100%' height='100%' loading='lazy'
             css={{ border: 0 }}
           ></iframe>
