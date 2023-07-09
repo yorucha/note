@@ -3,7 +3,7 @@ import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import path from 'path'
 
-import { Markdown } from '~/components/markdown'
+import { Note } from '~/components/note'
 
 type Params = {
   id: string
@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({ params }) 
   }
 }
 
-const Note: NextPage<Props> = (props) => {
+const Page: NextPage<Props> = (props) => {
   return (
     <>
       <Head>
@@ -55,33 +55,10 @@ const Note: NextPage<Props> = (props) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>
-        <div css={{
-          boxSizing: 'border-box',
-          maxWidth: 900,
-          width: '100%',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: 32,
-          marginBottom: 32,
-          paddingLeft: 24,
-          paddingRight: 24
-        }}>
-          <div css={{
-            background: '#fff',
-            '-webkit-transition': 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-            transition: 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-            borderRadius: '6px',
-            border: '1px solid',
-            borderColor: 'rgba(0,0,0,0.12)',
-            paddingLeft: 8,
-            paddingRight: 8
-          }}>
-            <Markdown>{props.contents}</Markdown>
-          </div>
-        </div>
+        <Note>{props.contents}</Note>
       </main>
     </>
   )
 }
 
-export default Note
+export default Page

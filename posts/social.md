@@ -5,7 +5,7 @@
 
 ## ![Mastodon](/post-assets/social/mastodon.png?w=20&h=20)Mastodon/Misskey
 
-- [@yorucha@vivaldi.net](<https://social.vivaldi.net/@yorucha>)
+- <https://social.vivaldi.net/@yorucha>
 
 ## ![Threads](/post-assets/social/threads.png?w=20&h=20)Threads
 

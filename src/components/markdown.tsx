@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import queryString, { ParsedQuery } from 'query-string'
 import { Components } from 'react-markdown'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import remarkGfm from 'remark-gfm'
 
 import theme from '~/theme/main'
+import queryString from '~/utils/queryString'
 
 const components: Components = {
   img: ({ src, alt }) => {
@@ -13,18 +13,11 @@ const components: Components = {
     const [, query] = src.split('?')
     const parsed = queryString.parse(query)
 
-    const w = parsed.width || parsed.w
-    const h = parsed.height || parsed.h
+    const w = parsed.width || parsed.w || null
+    const h = parsed.height || parsed.h || null
 
-    const toNumber = (q: ParsedQuery[keyof ParsedQuery]) => {
-      if (Array.isArray(q)) {
-        return q[0] ? parseInt(q[0]) : null
-      }
-      return q ? parseInt(q) : null
-    }
-
-    const width = toNumber(w)
-    const height = toNumber(h)
+    const width = w && parseInt(w)
+    const height = h && parseInt(h)
 
     if (width && height) {
       return (
@@ -126,3 +119,4 @@ const Markdown = ({ children }: MarkdownProps) => (
 )
 
 export { Markdown }
+export type { MarkdownProps }
