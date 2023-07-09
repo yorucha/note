@@ -27,6 +27,7 @@ export default function App ({ Component, pageProps }: AppProps) {
         html {
           font-family: ${roboto.style.fontFamily}, ${IBMPlexSansJP.style.fontFamily};
           font-size: 16px;
+          background: ${theme.palette.background.default}
         }
         body {
           color: ${theme.palette.text.primary}
@@ -35,7 +36,7 @@ export default function App ({ Component, pageProps }: AppProps) {
           box-sizing: border-box;
         }
       `}</style>
-      <main css={{ background: '#fefefe' }}>
+      <main>
         <GithubCorner href={GithubURL} bannerColor={theme.palette.primary.main}/>
         <Component {...pageProps} />
       </main>

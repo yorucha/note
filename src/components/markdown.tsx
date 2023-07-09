@@ -4,7 +4,6 @@ import { Components } from 'react-markdown'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import remarkGfm from 'remark-gfm'
 
-import theme from '~/theme/main'
 import queryString from '~/utils/queryString'
 
 const components: Components = {
@@ -61,7 +60,6 @@ const Markdown = ({ children }: MarkdownProps) => (
     maxWidth: 1012,
     marginRight: 'auto',
     marginLeft: 'auto',
-    padding: '24px 16px',
     fontWeight: 400,
     fontSize: '1rem',
     lineHeight: 1.5,
@@ -107,7 +105,7 @@ const Markdown = ({ children }: MarkdownProps) => (
       marginTop: '0.25em'
     },
     '& a': {
-      color: theme.palette.primary.main,
+      color: '#0366d6',
       textDecoration: 'none',
       '&:hover': {
         textDecoration: 'underline'

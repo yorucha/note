@@ -9,7 +9,7 @@ declare module '@emotion/react' {
 const theme = {
   palette: {
     primary: {
-      main: '#9575cd'
+      main: '#7986cb'
     },
     background: {
       default: '#fefefe'
