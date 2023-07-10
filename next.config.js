@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+// const prefixPath = (process.env.NODE_ENV === 'production') ? '/test' : ''
+
 const nextConfig = {
   reactStrictMode: true,
   /*
@@ -6,6 +8,9 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+  assetPrefix: prefixPath,
+  basePath: prefixPath,
+  trailingSlash: true,
   */
   webpack: (config) => {
     config.module.rules.push({

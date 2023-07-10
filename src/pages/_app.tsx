@@ -4,9 +4,8 @@ import type { AppProps } from 'next/app'
 import { IBM_Plex_Sans_JP, Roboto } from 'next/font/google'
 import GithubCorner from 'react-github-corner'
 
+import { GITHUB_URL } from '~/constants'
 import theme from '~/theme/main'
-
-const GithubURL = 'https://github.com/yorucha/note'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -37,7 +36,7 @@ export default function App ({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <main>
-        <GithubCorner href={GithubURL} bannerColor={theme.palette.primary.main}/>
+        <GithubCorner href={GITHUB_URL} bannerColor={theme.palette.primary.main}/>
         <Component {...pageProps} />
       </main>
     </>
