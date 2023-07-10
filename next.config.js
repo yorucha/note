@@ -1,17 +1,12 @@
 /** @type {import('next').NextConfig} */
-// const prefixPath = (process.env.NODE_ENV === 'production') ? '/test' : ''
 
 const nextConfig = {
   reactStrictMode: true,
-  /*
   output: 'export',
   images: {
     unoptimized: true
   },
-  assetPrefix: prefixPath,
-  basePath: prefixPath,
   trailingSlash: true,
-  */
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(svg)$/,
