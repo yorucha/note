@@ -105,6 +105,7 @@ const Markdown = ({ children }: MarkdownProps) => (
       marginTop: '0.25em'
     },
     '& a': {
+      paddingTop: '0.2em',
       color: '#0366d6',
       textDecoration: 'none',
       '&:hover': {
