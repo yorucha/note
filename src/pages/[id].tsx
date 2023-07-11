@@ -51,7 +51,7 @@ const Page: NextPage<Props> = (props) => {
   return (
     <>
       <Head>
-        <title>{`${APP_NAME} - ${props.id}`}</title>
+        <title>{`${APP_NAME} | ${props.id}`}</title>
         <meta name='description' content='No meta description.'/>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
