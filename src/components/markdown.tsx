@@ -9,7 +9,7 @@ import queryString from '~/utils/queryString'
 const components: Components = {
   img: ({ src, alt }) => {
     if (!src) return (<></>)
-    const [, query] = src.split('?')
+    const [orig, query] = src.split('?')
     const parsed = queryString.parse(query)
 
     const w = parsed.width || parsed.w || null
@@ -21,7 +21,7 @@ const components: Components = {
     if (width && height) {
       return (
         <Image
-          src={src}
+          src={orig}
           alt={alt ?? ''}
           width={width}
           height={height}
