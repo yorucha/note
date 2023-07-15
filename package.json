@@ -1,6 +1,6 @@
 {
   "name": "note",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -8,10 +8,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.13.7",
-    "normalize.css": "^8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-github-corner": "^2.5.0",
@@ -24,6 +20,7 @@
     "@types/react-dom": "18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
+    "autoprefixer": "^10.4.14",
     "eslint": "^8.44.0",
     "eslint-config-next": "13.4.9",
     "eslint-config-standard": "^17.1.0",
@@ -32,8 +29,11 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "file-loader": "^6.2.0",
     "next": "13.4.9",
+    "postcss": "^8.4.25",
+    "tailwindcss": "^3.3.2",
     "typescript": "^5.1.6",
     "url-loader": "^4.1.1"
   }
