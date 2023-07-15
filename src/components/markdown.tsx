@@ -57,7 +57,7 @@ const Styled = ({ children }: { children: React.ReactNode }) => {
     <div className='mx-auto break-words font-normal
     leading-6 tracking-[0.01em]
     [&_a:hover]:underline [&_a]:py-1 [&_a]:text-[#0366d6] [&_a]:no-underline
-    [&_blockquote]:my-2 [&_blockquote]:border-l-4 [&_blockquote]:px-4 [&_blockquote]:text-gray-600/90
+    [&_blockquote]:my-2 [&_blockquote]:border-l-4 [&_blockquote]:px-4 [&_blockquote]:text-gray-500
     [&_h1]:my-3 [&_h1]:flex [&_h1]:items-center [&_h1]:border-b [&_h1]:border-neutral-200 [&_h1]:pb-1 [&_h1]:text-2xl
     [&_h1_img]:mx-2 [&_h1_img]:inline
     [&_h2]:my-3 [&_h2]:flex [&_h2]:items-center [&_h2]:border-b [&_h2]:border-neutral-200 [&_h2]:pb-1 [&_h2]:text-2xl
