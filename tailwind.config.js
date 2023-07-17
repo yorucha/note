@@ -14,8 +14,19 @@ module.exports = {
       '2xl': '1536px'
     },
     extend: {
-      fontFamily: {
-        'roboto-jp': ['var(--font-roboto), var(--font-ibm-plex-sans-jp)']
+      keyframes: {
+        'fade-in': {
+          from: {
+            opacity: 0
+          },
+          to: {
+            opacity: 1
+          }
+        }
+      },
+      animation: {
+        'fade-in': 'fade-in .3s ease-out',
+        'spin-reverse': 'spin 60s linear infinite reverse'
       }
     }
   },

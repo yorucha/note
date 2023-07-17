@@ -14,13 +14,19 @@ const nextConfig = {
       test: /\.(svg)$/,
       use: [
         {
-          loader: 'url-loader',
+          loader: '@svgr/webpack',
           options: {
-            limit: 8192,
-            name: '[name].[hash].[ext]',
-            publicPath: '/_next/static/images/',
-            outputPath: 'static/images/',
-            esModule: false
+            svgoConfig: {
+              plugins: [
+                {
+                  name: 'preset-default',
+                  params: {
+                    overrides: {
+                      cleanupIds: false
+                    }
+                  }
+                }]
+            }
           }
         }
       ]

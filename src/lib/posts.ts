@@ -26,13 +26,4 @@ const getPostContents = async (params:PostParams) => {
   return fileContents
 }
 
-const getReadme = async () => {
-  const postsDirectory = process.cwd()
-
-  const fullPath = path.join(postsDirectory, 'README.md')
-  const fileContents = await fs.promises.readFile(fullPath, 'utf8')
-
-  return fileContents
-}
-
-export { getPostsName, getPostContents, getReadme }
+export { getPostsName, getPostContents }

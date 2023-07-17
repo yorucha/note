@@ -7,13 +7,13 @@
 
 - <https://social.vivaldi.net/@yorucha>
 
-  > (今は使ってない)
+  > ~今は使ってない~
 
 ## ![logo](/post-assets/social/threads.png?w=20&h=20)Threads
 
 - <https://threads.net/t/@yorucha.me>
 
-  > (今は使ってない)
+  > ~今は使ってない~
 
 &nbsp;
 
