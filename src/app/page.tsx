@@ -18,7 +18,7 @@ const Page = async () => {
   const data = [...paths.map(p => ({ title: p.slug, href: `./${p.slug}` })), ...dummy]
   return (
     <main>
-      <div className='flex h-[640px] items-center justify-center bg-red-50'>
+      <div className='flex h-[640px] max-h-screen items-center justify-center bg-red-50'>
         <Hero className='[&_#hero-svg-text]:origin-center  [&_#hero-svg-text]:animate-spin-reverse'/>
       </div>
       <div className={`p-8 ${zenMaruGothic.className}`}>
