@@ -4,15 +4,15 @@ import type { Metadata } from 'next'
 import type React from 'react'
 
 import GithubCorner from '~/components/githubCorner'
-import { APP_NAME } from '~/constants'
+import { APP_NAME, theme } from '~/constants'
 
 export const metadata: Metadata = {
   title: APP_NAME,
   description: 'No meta description.',
   icons: {
-    icon: './favicon.ico'
+    icon: '/favicon.ico'
   },
-  themeColor: '#f87171'
+  themeColor: theme.palette.primary
 }
 
 export default function RootLayout ({

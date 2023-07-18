@@ -14,20 +14,7 @@ const nextConfig = {
       test: /\.(svg)$/,
       use: [
         {
-          loader: '@svgr/webpack',
-          options: {
-            svgoConfig: {
-              plugins: [
-                {
-                  name: 'preset-default',
-                  params: {
-                    overrides: {
-                      cleanupIds: false
-                    }
-                  }
-                }]
-            }
-          }
+          loader: '@svgr/webpack'
         }
       ]
     })

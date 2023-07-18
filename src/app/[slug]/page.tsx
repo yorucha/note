@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import { Note } from '~/components/note'
 import { getPostContents, getPostsName } from '~/lib/posts'
 
@@ -18,11 +16,6 @@ const Page = async ({ params }: { params: Params }) => {
   return (
     <main>
       <Note>{contents}</Note>
-      <div className='container mx-auto flex items-center justify-center'>
-        <Link href='/'>
-          <div className='p-2 text-2xl'>🍣</div>
-        </Link>
-      </div>
     </main>
   )
 }
