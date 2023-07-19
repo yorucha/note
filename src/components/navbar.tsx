@@ -1,11 +1,13 @@
 import Link from 'next/link'
 
-import Sushi from './svg/sushi'
+import Logo from '~/components/svg/logo'
 
 const Navbar = () => (
   <nav className='container mx-auto flex h-14 flex-wrap items-center justify-center bg-transparent px-6'>
     <Link href='/'>
-      <Sushi className='h-10 w-10'/>
+      <div className='flex items-center'>
+        <Logo className='h-5 fill-current text-neutral-800'/>
+      </div>
     </Link>
   </nav>
 )
