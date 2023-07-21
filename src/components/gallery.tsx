@@ -28,7 +28,7 @@ const ListWrapper = ({ className, children, ...props }: GridListProps, ref: Reac
 const Item = ({ index, data }: { index:number, data:Data }) => (
   <Link href={data.href}>
     <div className='relative'>
-      <div className='flex h-24 animate-fade-in items-center border border-gray-200  bg-white '>
+      <div className='flex h-24 animate-fade-in items-center rounded-sm border  border-gray-200 bg-white'>
         <div className='mx-3'>
           <Image src={`/assets/sushi_${(index % 6) + 1}.png`} height={40} width={40} quality={100} alt='icon' />
         </div>
