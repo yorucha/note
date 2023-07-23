@@ -1,7 +1,7 @@
 ## ![logo](/post-assets/social/twitter.svg?w=20&h=20)Twitter
 
 - <https://twitter.com/yorutea>
-- <https://twitter.com/yoruchar>
+- <https://twitter.com/yoruchax>
 
 ## ![logo](/post-assets/social/mastodon.svg?w=20&h=20)Mastodon/Misskey
 
