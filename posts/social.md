@@ -1,6 +1,6 @@
 ## ![logo](/post-assets/social/bluesky.webp?w=20&h=20)Bluesky
 
-- <https://bsky.app/profile/yorucha.bsky.social>
+- <https://bsky.app/profile/yorucha.net>
 
 ## ![logo](/post-assets/social/twitter.svg?w=20&h=20)~Twitter~X
 
